@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+
+
+  <nav class="nav">
+    <div class="right">
+      <div class="menu-icon" id="menuIcon">
+        <img src="./images/icon-menu.svg" alt="Menu">
+      </div>
+      <div class="logo">
+        sneakers
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li class="link"><a href="#">Collections</a></li>
+          <li class="link"><a href="#">Men</a></li>
+          <li class="link"><a href="#">Women</a></li>
+          <li class="link"><a href="#">About</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="left">
+      <div class="cart" id="cartIcon">
+        <div id="cartQuantityIcon" class="quantity-icon">3</div>
+        <img src="./images/icon-cart.svg" alt="Cart">
+      </div>
+      <div class="avatar">
+        <img src="./images/image-avatar.png" alt="Profile">
+      </div>
+    </div>
+  </nav>
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="menuCont">
+    <div class="icon" id="closeIcon">
+      <img src="./images/icon-close.svg" alt="Close">
+    </div>
+    <div class="menu-links">
+      <ul>
+        <li class="link"><a href="#">Collections</a></li>
+        <li class="link"><a href="#">Men</a></li>
+        <li class="link"><a href="#">Women</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- cart -->
+  <div class="cart-container" id="cartCont">
+    <header>
+      Cart
+    </header>
+    <div class="content">
+      <div class="empty" id="cartEmpty">
+        Your cart is empty.
+      </div>
+      <div class="field" id="cartField">
+        <div class="pOne">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          <div class="about-product">
+            <div class="text">
+              <p class="title">Fall Limited Edition Sneakers</p>
+              <p class="price">$125.00 x <span id="quantity">3</span> <span id="total"></span></p>
+            </div>
+            <div class="icon" id="deleteIcon">
+              <img src="./images/icon-delete.svg" alt="Delete">
+            </div>
+          </div>
+        </div>
+        <div class="pTwo">
+          <button class="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="leftDesk">
+      <div class="big-image">
+        <img src="./images/image-product-1.jpg" alt="" id="bigImage">
+      </div>
+      <div class="thumbnail-bx">
+        <div id="1" class="thumbnail active"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div id="2" class="thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div id="3" class="thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div id="4" class="thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </div>
+    <!-- Left Mobile Part -->
+    <div class="leftMobile">
+      <div class="arrow-container">
+        <div class="previous arrow" id="mobileSliderLeft">
+          <img src="./images/icon-previous.svg" alt="">
+        </div>
+        <div class="next arrow" id="mobileSliderRight">
+          <img src="./images/icon-next.svg" alt="">
+        </div>
+      </div>
+      <div class="mobileSlider" id="mobileSliderBx">
+        <img src="./images/image-product-1.jpg" alt="">
+        <img src="./images/image-product-2.jpg" alt="">
+        <img src="./images/image-product-3.jpg" alt="">
+        <img src="./images/image-product-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="mainRight">
+      <p class="brand">Sneaker Company</p>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="para">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="pricebx">
+        <div class="last-price">
+          $125.00 <div class="sold">50%</div>
+        </div>
+        <div class="main-price">$250.00</div>
+      </div>
+      <div class="buttons">
+        <div class="quantity-input">
+          <div class="minus" id="minusIcon">
+            <img src="./images/icon-minus.svg" alt="-">
+          </div>
+          <div id="quantity-value">1</div>
+          <div class="plus" id="plusIcon">
+            <img src="./images/icon-plus.svg" alt="+">
+          </div>
+        </div>
+        <button class="add-to-cart" id="atcBtn"><img src="./images/icon-cart.svg" alt="">Add to cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="spot-light" id="spotLight">
+    <div class="spot-cont">
+      <div class="close" id="spotClose">
+        <img src="./images/icon-close.svg" alt="close">
+      </div>
+      <div class="spot-big-images">
+        <div class="arrow-container">
+          <div class="previous arrow" id="sliderLeft">
+            <img src="./images/icon-previous.svg" alt="">
+          </div>
+          <div class="next arrow" id="sliderRight">
+            <img src="./images/icon-next.svg" alt="">
+          </div>
+        </div>
+        <div class="slider-bx">
+          <div class="slider" id="sliderbx">
+            <img src="./images/image-product-1.jpg" alt="">
+            <img src="./images/image-product-2.jpg" alt="">
+            <img src="./images/image-product-3.jpg" alt="">
+            <img src="./images/image-product-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail-spot-bx">
+        <div class="thumbnail-spot active"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="thumbnail-spot"><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="thumbnail-spot"><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="thumbnail-spot"><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/AhmedMahim" target="_blanc">Ahmed Mahim</a>.
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
